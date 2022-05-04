@@ -46,7 +46,7 @@ article > *:not(.entry-content),
 .contact-form input[type="text"],
 .contact-form input[type="url"],
 .contact-form textarea {
-  @apply focus\:outline-none focus\:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
+  @apply focus:outline-none focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
 }
 .contact-form [type="button"],
 .contact-form [type="reset"],
