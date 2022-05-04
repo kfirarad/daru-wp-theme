@@ -7,9 +7,13 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body <?php body_class('bg-white text-gray-900 antialiased'); ?>>
+<body <?php body_class('bg-white text-gray-900 antialiased font-assistant'); ?>>
 
 	<?php do_action('tailpress_site_before'); ?>
 
