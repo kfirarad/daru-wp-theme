@@ -6,7 +6,7 @@ $menu_items = wp_get_nav_menu_items($menu_locations['hp-menu']);
 
 $links = [];
 foreach ($menu_items as $menu_item) {
-	$image_url = function_exists('z_taxonomy_image_url') ? z_taxonomy_image_url($menu_item->object_id, '') : '';
+	$image_url = function_exists('z_taxonomy_image_url') ? z_taxonomy_image_url($menu_item->object_id) : '';
 	$image_url = $image_url ? $image_url : get_the_post_thumbnail_url($menu_item->object_id);
 	$image_url = $image_url ? $image_url : "";
 
