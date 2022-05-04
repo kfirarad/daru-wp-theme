@@ -23,6 +23,10 @@ module.exports = {
             fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
             fontFamily: {
                 'assistant' : ['Assistant', 'sans-serif'],
+            },
+            grayscale: {
+                60: '60%',
+                80: '80%',
             }
         },
         screens: {
