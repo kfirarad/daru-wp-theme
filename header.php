@@ -32,9 +32,9 @@
 							<?php } else { ?>
 								<div>
 									<a href="<?php echo get_bloginfo('url'); ?>">
-										<h1 class="font-extrabold text-5xl uppercase inline-block"><?php echo get_bloginfo('name'); ?></h1>
+										<h1 class="font-extrabold text-5xl uppercase inline-block "><?php echo get_bloginfo('name'); ?></h1>
 									</a>
-									<span class="text-md font-light text-gray-600">
+									<span class="text-md font-light text-gray-600 whitespace-nowrap">
 										<?php echo get_bloginfo('description'); ?>
 									</span>
 

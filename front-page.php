@@ -15,11 +15,11 @@ foreach ($menu_items as $menu_item) {
 	];
 } ?>
 
-<div class="content-center flex w-full md:w-9/12">
-	<ul class="flex content-center w-max flex-wrap justify-around md:space-x-3">
+<div class="content-center flex w-full">
+	<ul class="flex content-center w-max flex-wrap justify-around">
 		<?php
 		foreach ($links as $link) {
-			echo '<li class="grayscale hover:grayscale-0 transition flex content-center md:justify-evenly w-2/5 md:w-1/4 my-6 justify-center ">
+			echo '<li class="grayscale hover:grayscale-0 transition flex content-center md:justify-evenly w-2/5 md:w-1/4 my-6 justify-center md:m-3">
 						<a href="' . $link['url'] . '" class="flex justify-center content-center flex-col">
 							' . ($link['image_url'] ? '<img src="' . $link['image_url'] . '" alt="' . $link['title'] . '" class="w-full h-full object-fill" title="' . $link['image_url'] . '"/>' : '') . '
 							<h3 class="text-center text-xl md:text-2xl font-bold text-gray-800">' . $link['title'] . '</h3>
