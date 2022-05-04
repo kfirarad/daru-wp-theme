@@ -16,8 +16,8 @@ foreach ($menu_items as $menu_item) {
 	];
 } ?>
 
-<div class="content-center flex w-full">
-	<ul class="flex content-center w-max flex-wrap justify-around md:space-x-3">
+<div class="content-center flex w-full mx-auto container">
+	<ul class="flex content-center w-max flex-wrap justify-between md:space-x-3">
 		<?php
 		foreach ($links as $link) {
 			echo '<li class="grayscale-[80%] hover:grayscale-0 transition flex content-center md:justify-evenly w-2/5 md:w-1/4 my-6 justify-center m-3">
