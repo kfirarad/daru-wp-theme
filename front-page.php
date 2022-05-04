@@ -23,7 +23,7 @@ foreach ($menu_items as $menu_item) {
 						<a href="' . $link['url'] . '" class="flex justify-center content-center flex-col">
 							' . ($link['image_url'] ? '<img src="' . $link['image_url'] . '" alt="' . $link['title'] . '" class="w-full h-full object-fill" title="' . $link['image_url'] . '"/>' : '') . '
 							<h3 class="text-center text-xl md:text-2xl font-bold text-gray-800">' . $link['title'] . '</h3>
-						</a
+						</a>
 						</li>';
 		}
 		?>
