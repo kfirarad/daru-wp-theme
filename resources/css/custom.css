@@ -46,11 +46,16 @@ article > *:not(.entry-content),
 .contact-form input[type="text"],
 .contact-form input[type="url"],
 .contact-form textarea {
-  @apply focus:outline-none focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
+  @apply w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
 }
 .contact-form [type="button"],
 .contact-form [type="reset"],
 .contact-form [type="submit"],
 .contact-form button {
-  @apply focus:shadow-outline rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none;
+  @apply rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700;
+}
+
+.summry-bottom-border {    
+    background: url("../img/pink-line.png") no-repeat center center;
+    background-size: contain;
 }

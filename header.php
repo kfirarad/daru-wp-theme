@@ -32,7 +32,7 @@
 							<?php } else { ?>
 								<div>
 									<a href="<?php echo get_bloginfo('url'); ?>">
-										<h1 class="font-extrabold text-5xl uppercase inline-block "><?php echo get_bloginfo('name'); ?></h1>
+										<h1 class="text-4xl md:text-6xl uppercase inline-block "><?php echo get_bloginfo('name'); ?></h1>
 									</a>
 									<span class="text-md font-light text-gray-600 whitespace-nowrap">
 										<?php echo get_bloginfo('description'); ?>
@@ -46,13 +46,11 @@
 
 						<div class="lg:hidden">
 							<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-								<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-									<g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-										<g id="icon-shape">
-											<path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
-										</g>
-									</g>
-								</svg>
+								<div class="space-y-2">
+									<span class="block w-5 h-0.5 bg-rose-300"></span>
+									<span class="block w-8 h-0.5 bg-rose-300"></span>
+									<span class="block w-8 h-0.5 bg-rose-300"></span>
+								</div>
 							</a>
 						</div>
 					</div>
