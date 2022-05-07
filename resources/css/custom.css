@@ -59,3 +59,9 @@ article > *:not(.entry-content),
     background: url("../img/pink-line.png") no-repeat center center;
     background-size: contain;
 }
+
+.current_page_item,
+.current-menu-item,
+.current-post-ancestor{
+    @apply text-pink-400 underline;
+}

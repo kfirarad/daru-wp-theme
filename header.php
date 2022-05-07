@@ -44,7 +44,7 @@
 							<?php } ?>
 						</div>
 
-						<div class="">
+						<div class="lg:hidden">
 							<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 								<div class="space-y-2">
 									<span class="block w-5 h-0.5 bg-rose-300"></span>
@@ -62,6 +62,19 @@
 							'menu_class'      => 'flex flex-col',
 							'theme_location'  => 'primary',
 							'li_class'        => 'text-lg',
+							'fallback_cb'     => false,
+						)
+					);
+					?>
+
+					<?php
+					wp_nav_menu(
+						array(
+							'container_id'    => 'primary-menu',
+							'container_class' => 'hidden lg:block w-10/12 m-auto',
+							'menu_class'      => 'flex flex-row justify-center',
+							'theme_location'  => 'primary',
+							'li_class'        => 'text-lg mx-2',
 							'fallback_cb'     => false,
 						)
 					);
