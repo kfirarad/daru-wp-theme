@@ -59,7 +59,7 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu-mobile',
-							'container_class' => 'h-0 overflow-hidden bg-gray-100 mt-4 lg:hidden trasition-all duration-200',
+							'container_class' => 'hidden overflow-hidden bg-gray-100 mt-4',
 							'menu_class'      => 'flex flex-col p-4',
 							'theme_location'  => 'primary',
 							'li_class'        => 'text-lg',
