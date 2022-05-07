@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -57,7 +58,7 @@
 					<?php
 					wp_nav_menu(
 						array(
-							'container_id'    => 'primary-menu',
+							'container_id'    => 'primary-menu-mobile',
 							'container_class' => 'hidden bg-gray-100 mt-4 p-4',
 							'menu_class'      => 'flex flex-col',
 							'theme_location'  => 'primary',

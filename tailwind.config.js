@@ -29,8 +29,8 @@ module.exports = {
                 80: '80%',
             },
             aspectRatio: {
-                '3/5': '3 / 5',
-      },
+                'bw': '2/3',
+            },
         },
         screens: {
             'xs': '480px',
