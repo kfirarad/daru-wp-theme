@@ -17,7 +17,7 @@ foreach ($menu_items as $menu_item) {
 } ?>
 
 <div class="w-full md:w-10/12">
-	<ul class="grid grid-cols-2 md:grid-cols-3 xla:grid-cols-4 gap-x-2 md:gap-x-3">
+	<ul class="grid grid-cols-2 md:grid-cols-3 xla:grid-cols-4 gap-x-2 md:gap-x-12">
 		<?php
 		foreach ($links as $link) {
 			$bg_img = $link['image_url'] ? "background: url('{$link['image_url']}') no-repeat center center / cover;" : "";
