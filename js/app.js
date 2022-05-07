@@ -1,1 +1,1 @@
-(()=>{window.addEventListener("load",function(){let e=document.querySelector("#primary-menu-mobile");document.querySelector("#primary-menu-toggle").addEventListener("click",function(n){n.preventDefault(),e.classList.toggle("hidden")})});})();
+(()=>{window.addEventListener("load",function(){let e=document.querySelector("#primary-menu-mobile");document.querySelector("#primary-menu-toggle").addEventListener("click",function(t){t.preventDefault(),e.classList.toggle("max-h-0"),e.classList.toggle("max-h-64")})});})();
