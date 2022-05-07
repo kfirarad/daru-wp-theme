@@ -1,16 +1,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('mb-6'); ?>>
 
 	<header class="entry-header mb-4">
-		<?php the_title(sprintf('<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+		<?php the_title(sprintf('<h2 class="entry-title text-2xl md:text-2xl leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
 		<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
 	</header>
 
 	<?php if (is_search() || is_archive()) : ?>
-
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
+			<span class="summry-bottom-border w-full md:w-2/12 h-2.5 m-3 block"></span>
 		</div>
-		<div class="summry-bottom-border w-1/2 h-2.5 my-3"></div>
 
 	<?php else : ?>
 

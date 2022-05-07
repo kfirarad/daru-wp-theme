@@ -27,7 +27,10 @@ module.exports = {
             grayscale: {
                 60: '60%',
                 80: '80%',
-            }
+            },
+            aspectRatio: {
+                '3/5': '3 / 5',
+      },
         },
         screens: {
             'xs': '480px',

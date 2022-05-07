@@ -16,15 +16,18 @@ foreach ($menu_items as $menu_item) {
 	];
 } ?>
 
-<div class="content-center flex w-full mx-auto container">
-	<ul class="flex content-center w-max flex-wrap justify-between md:space-x-3">
+<div class="w-10/12">
+	<ul class="grid grid-cols-2 md:grid-cols-3 gap-12">
 		<?php
 		foreach ($links as $link) {
-			echo '<li class="grayscale-[80%] hover:grayscale-0 transition flex content-center md:justify-evenly w-2/5 md:w-1/4 my-6 justify-center m-3">
-						<a href="' . $link['url'] . '" class="flex justify-center content-center flex-col">
-							' . ($link['image_url'] ? '<img src="' . $link['image_url'] . '" alt="' . $link['title'] . '" class="w-full h-full object-fill" title="' . $link['title'] . '" loading="lazy"/>' : '') . '
-							<h3 class="text-center  whitespace-nowrap text-xl md:text-2xl font-bold text-gray-800">' . $link['title'] . '</h3>
-						</a>
+			$bg_img = $link['image_url'] ? "background: url('{$link['image_url']}') no-repeat center center / cover;" : "";
+
+			echo '		<li class="p-4 grayscale-[80%] hover:grayscale-0 transition flex content-center my-6 justify-center group border-0">	
+							<a href="' . $link['url'] . '" class=" w-full aspect-[3/5]">							
+								<div style=" ' . $bg_img . '" class="w-full h-full flex flex-col justify-end content-end">
+									<h3 class="text-center  whitespace-wrap text-xl md:text-2xl font-bold text-gray-800 bg-white">' . $link['title'] . '</h3>
+								</div>
+							</a>
 						</li>';
 		}
 		?>

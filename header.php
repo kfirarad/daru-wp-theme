@@ -23,8 +23,8 @@
 
 		<header>
 
-			<div class="mx-auto container">
-				<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
+			<div class="mx-auto w-full p-2">
+				<div class="border-b py-6">
 					<div class="flex justify-between items-center">
 						<div>
 							<?php if (has_custom_logo()) { ?>
@@ -32,7 +32,7 @@
 							<?php } else { ?>
 								<div>
 									<a href="<?php echo get_bloginfo('url'); ?>">
-										<h1 class="text-4xl md:text-6xl uppercase inline-block "><?php echo get_bloginfo('name'); ?></h1>
+										<h1 class="text-4xl md:text-6xl uppercase inline-block ml-3"><?php echo get_bloginfo('name'); ?></h1>
 									</a>
 									<span class="text-md font-light text-gray-600 whitespace-nowrap">
 										<?php echo get_bloginfo('description'); ?>
@@ -44,7 +44,7 @@
 							<?php } ?>
 						</div>
 
-						<div class="lg:hidden">
+						<div class="">
 							<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 								<div class="space-y-2">
 									<span class="block w-5 h-0.5 bg-rose-300"></span>
@@ -54,15 +54,14 @@
 							</a>
 						</div>
 					</div>
-
 					<?php
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
-							'menu_class'      => 'lg:flex lg:-mx-4',
+							'container_class' => 'hidden bg-gray-100 mt-4 p-4',
+							'menu_class'      => 'flex flex-col',
 							'theme_location'  => 'primary',
-							'li_class'        => 'lg:mx-4',
+							'li_class'        => 'text-lg',
 							'fallback_cb'     => false,
 						)
 					);
