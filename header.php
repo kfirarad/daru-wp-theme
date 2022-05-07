@@ -24,8 +24,8 @@
 
 		<header>
 
-			<div class="mx-auto w-full p-2">
-				<div class="border-b py-6">
+			<div class="mx-auto w-full pb-2">
+				<div class="border-b pb-6">
 					<div class="flex justify-between items-center">
 						<div>
 							<?php if (has_custom_logo()) { ?>
