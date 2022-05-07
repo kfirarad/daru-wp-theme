@@ -25,7 +25,7 @@
 		<header>
 
 			<div class="mx-auto w-full pb-2">
-				<div class="border-b pb-6">
+				<div class="border-b pb-2 px-6">
 					<div class="flex justify-between items-center">
 						<div>
 							<?php if (has_custom_logo()) { ?>
@@ -59,8 +59,8 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu-mobile',
-							'container_class' => 'hidden bg-gray-100 mt-4 p-4',
-							'menu_class'      => 'flex flex-col',
+							'container_class' => 'h-0 overflow-hidden bg-gray-100 mt-4 lg:hidden trasition-all duration-200',
+							'menu_class'      => 'flex flex-col p-4',
 							'theme_location'  => 'primary',
 							'li_class'        => 'text-lg',
 							'fallback_cb'     => false,
