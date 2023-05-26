@@ -30,7 +30,7 @@ article > *:not(.entry-content),
 
     ul:not(.block-editor-block-variation-picker__variations) {
         li {
-            @apply list-disc list-inside;
+            /* @apply list-disc list-inside; */
         }
     }
 
@@ -64,4 +64,21 @@ article > *:not(.entry-content),
 .current-menu-item,
 .current-post-ancestor{
     @apply text-pink-400 underline;
+}
+
+.woocommerce ul.products li.product a img{
+    @apply aspect-square;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    padding: 8px;
+    outline: 1px solid rgba(0,0,0,0.2);    
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea, [type='search'] {
+@apply w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow;
+}
+
+button, [type='button'], [type='reset'], [type='submit']{
+    @apply rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700;
 }
